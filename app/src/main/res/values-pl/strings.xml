@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sklep</string>
+    <string name="amount">ILOŚĆ: </string>
+    <string name="information_about_order">Wpisz swoje dane</string>
+    <string name="computer">Komputer</string>
+    <string name="sub">ODEJMIJ</string>
+    <string name="add">DODAJ</string>
+    <string name="peripherals">PERYFERIA</string>
+    <string name="mice">Myszki</string>
+    <string name="keyboards">Klawiatury</string>
+    <string name="monitors">Monitory</string>
+    <string name="price">Cena:</string>
+    <string name="checkPrice">Oblicz Cenę</string>
+    <string name="mouse_image">Zdjęcie Myszki</string>
+    <string name="monitor_image">Zdjęcie Monitora</string>
+    <string name="keyboard_image">Zdjęcie Klawiatury</string>
+    <string name="Order">Zamów</string>
+    <string name="enterNumber">Wprowadź numer telefonu</string>
+    <string name="send_latest_order">Wyślij ostatnie zamówienie</string>
+
+    <!-- Shortcut labels -->
+    <string name="shortcut_order_list_short">Zamówienia</string>
+    <string name="shortcut_order_list_long">Zobacz listę zamówień</string>
+    <string name="shortcut_sms_short">SMS</string>
+    <string name="shortcut_sms_long">Wyślij SMS z zamówieniem</string>
+    <string name="shortcut_share_short">Udostępnij</string>
+    <string name="shortcut_share_long">Udostępnij zamówienia</string>
+    <string name="shortcut_price_short">Cena</string>
+    <string name="shortcut_price_long">Oblicz cenę</string>
+
+    <string-array name="spinnerComputer">
+        <item>Komputer budżetowy - (cena: 1500$)</item>
+        <item>Komputer do gier - (cena: 4000$)</item>
+        <item>Komputer do pracy - (cena: 10000$)</item>
+    </string-array>
+    <string-array name="spinnerMouse">
+        <item>Aerox 3 Custom - (cena: 200$)</item>
+        <item>Rival 5 - (cena: 150$)</item>
+        <item>Rival 3 Wireless - (cena: 100$)</item>
+    </string-array>
+    <string-array name="spinnerKeyboard">
+        <item>Apex Pro Gen 3 - (cena: 300$)</item>
+        <item>Apex Pro TKL Gen 3 - (cena: 350$)</item>
+        <item>Apex Pro TKL Wireless Gen 3 - (cena: 250$)</item>
+    </string-array>
+    <string-array name="spinnerMonitor">
+        <item>24" Odyssey G30D FHD - (cena: 1000$)</item>
+        <item>27" S36GD FHD - (cena: 700$)</item>
+        <item>27" M50D FHD - (cena: 500$)</item>
+    </string-array>
+</resources> 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="id_order_list"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_order_list_short"
+        android:shortcutLongLabel="@string/shortcut_order_list_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="school.exercise.shop"
+            android:targetClass="school.exercise.shop.OrderList" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="id_send_sms"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_sms_short"
+        android:shortcutLongLabel="@string/shortcut_sms_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="school.exercise.shop"
+            android:targetClass="school.exercise.shop.SendSMS" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="id_share"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_share_short"
+        android:shortcutLongLabel="@string/shortcut_share_long">
+        <intent
+            android:action="school.exercise.shop.SHARE_ORDER"
+            android:targetPackage="school.exercise.shop"
+            android:targetClass="school.exercise.shop.MainActivity" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="id_price"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_price_short"
+        android:shortcutLongLabel="@string/shortcut_price_long">
+        <intent
+            android:action="school.exercise.shop.CALCULATE_PRICE"
+            android:targetPackage="school.exercise.shop"
+            android:targetClass="school.exercise.shop.MainActivity" />
+    </shortcut>
+</shortcuts> 

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/computerImage"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/computer" />
+    <Spinner
+        android:id="@+id/spinnerComputer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/computerImage" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:hint="@string/information_about_order"
+        android:inputType="textPersonName"
+        android:layout_below="@id/computerImage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount"
+        android:layout_below="@id/username"
+        android:id="@+id/amount"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:layout_below="@id/amount"/>
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sub"
+        android:layout_toEndOf="@id/seekBar"
+        android:layout_below="@id/username"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:layout_toEndOf="@id/sub"
+        android:layout_below="@id/username"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/peri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/peripherals"
+        android:layout_below="@id/seekBar"
+        android:layout_marginTop="10dp"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkMouse"
+        android:layout_below="@id/peri"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/checkMouse"
+        android:layout_below="@id/peri"
+        android:text="@string/mice"
+        android:textSize="30sp"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/mouseImage"
+        android:layout_below="@id/checkMouse"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/mouse_image" />
+
+    <Spinner
+        android:id="@+id/spinnerMouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkMouse"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/mouseImage" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkKeyboard"
+        android:layout_below="@id/mouseImage"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/checkKeyboard"
+        android:layout_below="@id/mouseImage"
+        android:text="@string/keyboards"
+        android:textSize="30sp"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/keyboardImage"
+        android:layout_below="@id/checkKeyboard"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/keyboard_image" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerKeyboard"
+        android:layout_below="@id/checkKeyboard"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/keyboardImage"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkMonitor"
+        android:layout_below="@id/keyboardImage"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/checkMonitor"
+        android:layout_below="@id/keyboardImage"
+        android:text="@string/monitors"
+        android:textSize="30sp"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/monitorImage"
+        android:layout_below="@id/checkMonitor"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/monitor_image" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerMonitor"
+        android:layout_below="@id/checkMonitor"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/monitorImage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textSize="30sp"
+        android:layout_below="@id/monitorImage"
+        android:id="@+id/price"/>
+    <Button
+        android:id="@+id/calculatePrice"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price"
+        android:layout_marginTop="30dp"
+        android:text="@string/checkPrice"/>
+    <Button
+        android:id="@+id/order"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/calculatePrice"
+        android:layout_below="@id/price"
+        android:layout_marginTop="30dp"
+        android:text="@string/Order"/>
+</RelativeLayout>
